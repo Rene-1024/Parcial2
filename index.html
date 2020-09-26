@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial_2</title>
+    <script src="action_2.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1> Notas Diseño Gráfico digital IV </h1>
+        <form id="form" action="notas">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required > <br>
+           
+            <label for="nota_t1">Nota Taller 1:</label>
+            <input type="number" name="nota_t1" id="nota_t1" min="0.0" max="10.0" required><br>
+
+            <label for="nota_t2">Nota Taller 2:</label>
+            <input type="number" name="nota_t2" id="nota_t2" min="0.0" max="10.0" required><br>
+
+            <label for="Parcial">Nota Parcial:</label>
+            <input type="number" name="parcial" id="parcial" min="0.0" max="10.0" required><br>
+
+            <input type="button" value="Calcular" onclick="calcular()">
+        </form>
+    </div>
+</body>
+</html>
