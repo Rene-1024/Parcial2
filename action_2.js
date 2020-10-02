@@ -3,26 +3,36 @@ function calcular(){
     var nota_t2 = document.getElementById("nota_t2").value;
     var parcial = document.getElementById("parcial").value;
     var nombre = document.getElementById("nombre").value;
-   
-    if (nota_t1<0){
+
+    if (nombre == null || nombre.length == 0){
+        alert("Por favor escribe tu nombre");
+        return false;
+    }
+    if (nota_t1<0 ||nota_t1 == null || nota_t1.length == 0){
         alert("la nota minima es 0 verifica por favor tu nota de taller 1");
+        return false;
     }
-    else if(nota_t1>10){
+    else if(nota_t1>10 ||nota_t1 == null || nota_t1.length == 0){
         alert("la nota maxima es 10 verifica por favor tu nota de taller 1");
+        return false;
     }
 
-    if (nota_t2<0){
+    if (nota_t2<0 ||nota_t2 == null || nota_t2.length == 0){
         alert("la nota minima es 0 verifica por favor tu nota de taller 2");
+        return false;
     }
-    else if(nota_t2>10){
+    else if(nota_t2>10 ||nota_t2 == null || nota_t2.length == 0){
         alert("la nota maxima es 10 verifica por favor tu nota de taller 2");
+        return false;
     }
 
-    if (parcial<0){
+    if (parcial<0 ||parcial == null || parcial.length == 0){
         alert("la nota minima es 0 verifica por favor tu nota de parcial");
+        return false;
     }
-    else if(parcial>10){
+    else if(parcial>10 ||parcial == null || parcial.length == 0){
         alert("la nota maxima es 10 verifica por favor tu nota de parcial");
+        return false;
     }
     var p = parcial * 0.15;
     var t1 = nota_t1 * 0.05;
