@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray;
+}
+#impresion{
+    background-color: white;
+    padding: 60px;
+    border-radius: 30px;
+}
+h1{
+
+    font-size: 40px;
+    color:#303f9f;
+    margin-bottom: 20px;
+}
+p{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
