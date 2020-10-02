@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: gray;
+}
+.contenedor{
+    background-color: white;
+    
+    padding: 60px;
+    border-radius: 30px;
+
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color:#303f9f;
+}
+input{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.boton{
+    background-color: #303f9f;
+    border-style: none;
+    padding: 10px;
+    color: white;
+
+}
